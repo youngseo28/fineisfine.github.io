@@ -1,0 +1,235 @@
+@-webkit-keyframes appear { /* 크롬과 사파리 4.0이상을 위한 코드 */
+    0% {
+        left: 70px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes appear {
+    0% {
+        left: 70px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+
+    }
+}
+@keyframes btnappear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    /* 100% {
+        opacity: 1;
+    } */
+}
+
+@keyframes lineright {
+    from {width:0;}
+    to {width:1200px;}
+}
+
+/*  */
+
+section#content3_2 > div.Overpersona1 {
+    animation-name: Overpersona1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Overpersona1 {
+    0% {padding-right:0;}
+    100%{padding-right:150px;}
+}
+
+section#content3_2 > div.Outpersona1 {
+    animation-name: Outpersona1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes Outpersona1 {
+    0% {padding-right:150px;}
+    100%{padding-right:0;}
+}
+
+
+section#content3_2 > div.Overpersona1_2 {
+    animation-name: Overpersona1_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes Overpersona1_2 {
+    0% {right:0;}
+    100%{right:-150px;}
+}
+
+section#content3_2 > div.Outpersona1_2 {
+    animation-name: Outpersona1_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Outpersona1_2 {
+    0% {right:-150px;}
+    100%{right:0;}
+}
+
+/*  */
+
+section#content3_2 > div.Overpersona2 {
+    animation-name: Overpersona2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes Overpersona2 {
+    0% {padding-left:0;}
+    100%{padding-left:150px;}
+}
+
+section#content3_2 > div.Overpersona2_2 {
+    animation-name: Overpersona2_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Overpersona2_2 {
+    0% {left:0;}
+    100%{left:-150px;}
+}
+
+
+section#content3_2 > div.Outpersona2 {
+    animation-name: Outpersona2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes Outpersona2 {
+    0% {padding-left:150px;}
+    100%{padding-left:0;}
+}
+
+section#content3_2 > div.Outpersona2_2 {
+    animation-name: Outpersona2_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Outpersona2_2 {
+    0% {left:-150px;}
+    100%{left:0;}
+}
+
+/* 화살표1 */
+.goclick1 {
+    animation-name: goclick1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goclick1 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.goclick1_2 {
+    animation-name: goclick1_2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goclick1_2 {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* 화살표2 */
+
+.goclick2 {
+    animation-name: goclick2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goclick2 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.goclick2_2 {
+    animation-name: goclick2_2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goclick2_2 {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* 박스 확장 */
+
+section#content3_2 > div.Uppersona1 {
+    animation-name: Uppersona1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    padding-right: 150px;
+}
+
+@keyframes Uppersona1 {
+    0% {padding-right:150;}
+    100%{padding-right:900px;}
+}
+
+/* 박스 밀림 */
+section#content3_2 > div.Uppersona1_2 {
+    animation-name: Uppersona1_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    right: -850px;
+}
+
+@keyframes Uppersona1_2 {
+    0% {right:-150px;}
+    100%{right:-850px;}
+}
+
+/* 박스2 확장 */
+section#content3_2 > div.Uppersona2 {
+    animation-name: Uppersona2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    padding-left: 150px;
+}
+
+@keyframes Uppersona2 {
+    0% {padding-left:150;}
+    100%{padding-left:900px;}
+}
+
+/* 박스2 확장 밀림 */
+section#content3_2 > div.Uppersona2_2 {
+    animation-name: Uppersona2_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    left: -850px;
+}
+
+@keyframes Uppersona2_2 {
+    0% {left:-150px;}
+    100%{left:-850px;}
+}
+
+

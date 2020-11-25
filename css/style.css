@@ -1,0 +1,1096 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+
+
+li {list-style-type: none;}
+* {
+    margin:0; padding:0
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+}
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: All 0.2s ease;
+        -webkit-transition: All 0.2s ease;
+        -moz-transition: All 0.2s ease;
+        -o-transition: All 0.2s ease;
+}
+header > div.inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+header > div.inner > div#logo {
+    float: left;
+}
+header > div.inner > nav {
+    text-align: right;
+}
+header > div.inner > nav > ul > li {
+    padding-left: 50px;
+    display: inline-block;
+    padding-top: 8px;
+}
+header > div.inner > nav > ul > li > a {
+    text-decoration: none;
+    color: #808080;
+    transition: All 0.5s ease;
+        -webkit-transition: All 0.5s ease;
+        -moz-transition: All 0.5s ease;
+        -o-transition: All 0.5s ease;
+}
+header > div.inner > nav > ul > li > a:hover {
+    color: #006cff;
+}
+header > div.inner > nav > ul > li > a:focus {
+    color: #006cff;
+}
+
+/* section */
+
+
+/* section#content1 */
+section {
+    /* height: 100vh; */
+}
+
+.inner {
+    width: 1150px;
+    margin: 0 auto 0 auto;
+}
+section#content1 {
+    margin-top: 100px;
+    height: 884px;
+    /* background-color: #006cff; */
+    background-image: url(../img/contents/mainwallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#content1 > div.inner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+section#content1 > div.inner > div.mockup {
+    background-image: url(../img/contents/content1-main3.png);
+    /* margin-left: -10px; */
+    margin-top: -160px;
+    width: 600px;
+    height: 850px;
+    /* margin: 100px 0 0 0; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+section#content1 > div.inner > div.text {
+    position: relative;
+    width: 500px;
+    margin-right: 0px;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-direction: normal;
+    /* animation-iteration-count: unset; */
+}
+section#content1 > div.inner > div.text > h2 {
+    color: #006cff;
+    font-size: 30.5px;
+    font-weight: 600;
+    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15); */
+    padding-bottom: 40px;
+}
+section#content1 > div.inner > div.text > img {
+    display: block;
+    margin-bottom: 20px;
+}
+section#content1 > div.inner > div.text > p {
+    display: inline;
+    /* padding-left: 140px; */
+    text-align: left;
+    font-size: 18x;
+    line-height: 30.6px;
+    font-weight: 600;
+    /* color: #666666; */
+    padding-top: 40px;
+    color: #006cff;
+    text-shadow:
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+     -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+}
+section#content1 > div.inner > div.text > div.icon {
+    margin-top: 50px;
+}
+section#content1 > div.inner > div.text > div.icon > a {
+    color: #828282;
+    width: 215px;
+    height: 27px;
+    border-top-left-radius: 15px;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.15);
+    padding: 9px 0 4px 0;
+    text-align: center;
+    animation-name: btnappear;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: unset;
+}
+section#content1 > div.inner > div.text > div.icon > a:first-child {
+    margin-right: 14px;
+}
+section#content1 > div.inner > div.text > div.icon > a > img {
+    margin-bottom: -8px;
+    padding-left: -9px;
+}
+
+/* section#content2 */
+section#content2 {
+    background-image: url(../img/contents/wallpaper1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f2f2f2;
+    background-position: top;
+    overflow: hidden;
+    margin-top: -1px;
+
+}
+section#content2 > div.inner {
+    height: 863px;
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* scection#content2 .text-area */
+section#content2 > div.inner > div.text-area {
+    float: left;
+    height: 600px;
+}
+section#content2 > div.inner > div.text-area > h2 {
+    color: #d4d5d8;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 150px;
+    /* 타이틀 아래 떨어뜨리기 */
+    padding-bottom: 100px;
+}
+section#content2 > div.inner > div.text-area > h3 {
+    color: #006cff;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+section#content2 > div.inner > div.text-area > p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 50px;
+}
+section#content2 > div.inner > div.text-area > p > span {
+    font-size:14px
+}
+
+/* scection#content2 .img-area */
+section#content2 > div.inner > div.img-area > {
+    position: absolute;
+    right: 0;
+    background-color: #006cff;
+}
+section#content2 > div.inner > div.img-area > img {
+    display: block;
+    text-align: right;
+}
+section#content2 > div.inner > div.img-area > img#message1 {
+    padding: 20px 0 75px 0;
+    position: relative;
+    /* left: 54px; */
+    opacity:0;
+    left: 150px;
+    top: 100px;
+    margin-bottom: 120px;
+}
+section#content2 > div.inner > div.img-area > img.messages {
+    opacity: 0;
+    margin-top: 100px;
+}
+section#content2 > div.inner > div.img-area > img:nth-child(2) {
+   padding-bottom: 30px;
+}
+section#content2 > div.inner > div.img-area > img:nth-child(3) {
+    padding-bottom: 30px;
+}
+section#content2 > div.inner > div.img-area > img:last-child {
+    /* padding-bottom: 25%; */
+}
+
+
+/* section#content3 */
+section#content3 {
+    background-color: #f2f2f2;
+}
+section#content3 > div.inner {
+    height: 960px;
+}
+section#content3 > div.inner > h3 {
+    color: #006cff;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+section#content3 > div.inner > div.items {
+    text-align: center;
+
+}
+section#content3 > div.inner .slidetop {
+    position: relative;
+    opacity: 0;
+    top: 50px;
+}
+section#content3 > div.inner > div.items > img.graph {
+    margin-top: 20px;
+}
+/* 배경 라운드 */
+section#content3 > div.inner > div.items > div.text-area {
+    margin: 40px auto 0 auto;
+    width: 850px;
+    height: 100px;
+    background-color: #006cff;
+    border-radius: 500px;
+    text-align: center;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+}
+section#content3 > div.inner > div.items > div.text-area > img {
+    margin-top: -170px;
+}
+section#content3 > div.inner > div.items > div.text-area > p {
+    font-size: 32px;
+    padding-top: 12px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+/* section#content3_2 */
+section#content3_2 {
+    height: 700px;
+    position: relative;
+    background-color: #f2f2f2;
+    padding-top: 150px;
+}
+section#content3_2 > div.inner {
+    text-align: center;
+    padding-bottom: 60px;
+}
+section#content3_2 > div.inner > h3 {
+    color: #006cff;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+section#content3_2 > div.persona {
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+section#content3_2 > div.persona > div.wrap {
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+section#content3_2 > div.persona > div.wrap > div.text {
+    padding-top: 40px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+}
+section#content3_2 > div.persona > div.wrap > img.perchar {
+    position: absolute;
+    bottom: 0;
+}
+section#content3_2 > div.persona > div.wrap > img.perchar:hover {
+    /* height: 500px; */
+}
+section#content3_2 > div#persona1 {
+    position: absolute;
+    background-color: #fff;
+    /* left: -150px; */
+    left: 0;
+
+}
+section#content3_2 > div#persona1box {
+    position: absolute;
+    /* background-color: red; */
+    background-color: #fff;
+    /* border-radius: 0 100px 0 0; */
+    /* left: -150px; */
+    left: 0;
+    width: 50%;
+    height: 500px;
+}
+section#content3_2 > div#persona2box {
+    position: absolute;
+    right: 0;
+    background-color: #006cff;
+    width: 50%;
+    height: 500px;
+    /* padding-left: 150px; */
+}
+section#content3_2 > div#persona2 {
+    position: absolute;
+    background-color: #006cff;
+    /* padding-left: 150px; */
+    right: 0;
+}
+section#content3_2 > div#persona1 > div.wrap {
+    right: 0;
+}
+section#content3_2 > div#persona2 > div.wrap {
+    left: 0;
+}
+section#content3_2 > div#persona1 > div.wrap > img.perchar {
+    right: 200px;
+}
+section#content3_2 > div#persona2 > div.wrap > img.perchar {
+    left: 200px;
+}
+section#content3_2 > div#persona1 > div.wrap > div.text {
+    z-index: 9;
+    color: #006cff;
+    left: 120px;
+}
+section#content3_2 > div#persona2 > div.wrap > div.text {
+    color: #fff;
+    left: 180px;
+}
+section#content3_2 button {
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+}
+section#content3_2 > div#persona1 > div.wrap > button#click1 {
+    position: absolute;
+    top: 150px;
+    color: #006cff;
+    right: 0;
+    font-size: 140px;
+    opacity: 0;
+}
+
+section#content3_2 > div#persona2 > div.wrap > button#click2 {
+    position: absolute;
+    top: 150px;
+    color: #fff;
+    font-size: 140px;
+    opacity: 0;
+}
+/* persona text */
+section#content3_2 > div#persona1 ul#perul1 {
+    position: absolute;
+    top: 75px;
+    right: -660px;
+    line-height: 50px;
+    opacity: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: #006cff;
+}
+section#content3_2 > div#persona1 ul#perul1 > li {
+    list-style-type: square;
+}
+
+section#content3_2 > div#persona2 ul#perul2 {
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    display: none;
+    /* display: block; */
+    top: 145px;
+    left: -660px;
+    line-height: 50px;
+    font-size: 21px;
+}
+section#content3_2 > div#persona2 ul#perul2 > li {
+    list-style-type: square;
+}
+
+/* section#content4 */
+section#content4 {
+    background-color: #f2f2f2;
+    padding: 140px 0 170px 0;
+}
+section#content4 > div.inner {
+    /* height: 884px; */
+}
+section#content4 > div.inner > h2 {
+    color: #d4d5d8;
+    font-size: 40px;
+    font-weight: 600;
+    /* 타이틀 위로 붙이기 */
+    /* margin-top: -10%; */
+    /* 타이틀 아래 떨어뜨리기 */
+    padding-bottom: 16%;
+}
+#content4 .slideright {opacity: 0;}
+div#r1 {
+    position: relative;
+}
+div#r2 {
+    position: relative;
+    left: -50px;
+}
+div#r3 {
+    position: relative;
+    left: -50px;
+}
+div#r4 {
+    position: relative;
+    left: -50px;
+}
+section#content4 > div.inner > div.rect {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+section#content4 > div.inner > div.rect > div {
+    width: 220px; height: 130px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 90px;
+    border-radius: 600px;
+    background-color: #fff;
+    color: #006cff;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.05);
+}
+section#content4 > div.inner > div.rect > div:last-child {
+    background-color: #006cff;
+    color: #fff;
+}
+section#content4 > div.inner > div.rect > img.r_arrow {
+    margin: 90px 20px 0 20px;
+}
+section#content4 > div.inner > h3 {
+    margin-top: 60px;
+    text-align: center;
+    color: #006cff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* section#content5 */
+section#content5 {
+    background-image: url(../img/contents/wallpaper2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    /* height: 884px; */
+    width: 100%;
+    height: 900px;
+    color: #006cff;
+}
+section#content5 > div.inner {
+    padding-top: 100px;
+}
+section#content5 > div.inner > h3 {
+    margin-top: 100px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 40px;
+}
+section#content5 > div.inner > p {
+    font-size: 17px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+section#content5 > div.inner > div.meaning {
+    color: #000;
+    line-height: 28px;
+}
+
+
+img#shape {
+    margin-top: -100px;
+    margin-bottom: -180px;
+}
+/* section#content6 */
+section#content6 {
+    background-image: url(../img/contents/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    background-attachment: fixed;
+}
+section#content6 > div.inner {
+    height: 1050px;
+}
+section#content6 > div.inner > h2 {
+    /* color: #d4d5d8; */
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    /* 타이틀 위로 붙이기 */
+    padding-top: 150px;
+    /* 타이틀 아래 떨어뜨리기 */
+    padding-bottom: 50px;
+}
+section#content6 > div.inner > iframe {
+  margin-left: -30px;
+}
+/* section#content7 */
+section#content7 {
+    padding: 30px 0 0 0;
+    background: #f2f2f2;
+}
+section#content7 > div.inner > h2 {
+    color: #d4d5d8;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+section#content7 ol {
+    display: block;
+    margin: 0 auto;
+}
+section#content7 ol > li {
+    float: left;
+    cursor: pointer;
+    padding: 20px 33px 20px 35px;
+    margin: 0 30px 0 30px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    /* border-radius: 40px; */
+    border-top-left-radius: 15px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+
+}
+section#content7 ol > li:hover{
+    color: #006cff;
+}
+section#content7 ol > li:active{
+    color: #006cff;
+}
+section#content7 ol > li:focus{
+    color: #006cff;
+}
+/* 스크롤바 */
+/* ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+} */
+.external {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    padding-bottom: 100px;
+  }
+  #horizontal-scroll-wrapper {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 1200px;
+    height: 1200px;
+    transform: rotate(-90deg) translate3d(0,-1200px,0);
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    /* perspective: 1px; */
+    /* padding-bottom: 10rem; */
+  }
+  .external .img-wrapper {
+    height: 800px;
+    width: 1600px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .external p {
+    margin: 0;
+  }
+  .external .first {
+    margin-left: 60px;
+    margin-top: -200px;
+  }
+  .external .second {
+    margin-left: 100px;
+    margin-top: -200px;
+    margin-bottom: 200px;
+  }
+
+  .external .container {
+    position: relative;
+  }
+
+/* section#content8 */
+
+/* 배경 */
+section#content8 div.bg {
+    z-index: 20;
+}
+section#content8 div.bg1 > img {
+    position: absolute;
+    height: 150px;
+    right: 0;
+    margin-right: 250px;
+    margin-top: 400px;
+    opacity: 0.2;
+}
+section#content8 div.bg2 > img:first-child {
+    position: absolute;
+    height: 550px;
+    margin-top: -500px;
+    margin-left: 10px;
+    opacity: 0.3;
+}
+section#content8 div.bg2 > div.ectbg {
+    width: 1200px;
+    /* height: 100%; */
+    margin: auto;
+}
+section#content8 div.bg2 > div.ectbg > img {
+    position: absolute;
+    height: 150px;
+    margin-top: 420px;
+    margin-left: 90px;
+    opacity: 0.15;
+}
+section#content8 div.bg3 > img:first-child {
+    position: absolute;
+    height: 550px;
+    margin-top: -250px;
+    margin-left: 10px;
+    opacity: 0.3;
+}
+section#content8 div.bg3 > div.ectbg {
+    width: 1200px;
+    /* height: 100%; */
+    margin: auto;
+}
+section#content8 div.bg3 > div.ectbg > img {
+    position: absolute;
+    height: 150px;
+    margin-top: 420px;
+    margin-left: 140px;
+    opacity: 0.15;
+}
+section#content8 div.bg4 >  div.ectbg >img:first-child {
+    position: absolute;
+    right: 100px;
+    /* margin-right: -100px; */
+    height: 400px;
+    /* margin-top: -100px; */
+    opacity: 0.4;
+}
+section#content8 div.bg4 > div.ectbg {
+    width: 1200px;
+    /* height: 100%; */
+    margin: auto;
+}
+section#content8 div.bg4 > div.ectbg > img:nth-child(2) {
+    position: absolute;
+    height: 90px;
+    margin-top: 470px;
+    margin-left: 650px;
+    opacity: 0.15;
+}
+/* content8 */
+section#content8 {
+    /* background-color: #f2f2f2; */
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(../img/contents/wallpaper3.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+section#content8 > div.wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+section#content8 > div.wrap > h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    /* 타이틀 위로 붙이기 */
+    padding-top: 100px;
+    /* 타이틀 아래 떨어뜨리기 */
+    padding-bottom: 16%;
+}
+section#content8 > div.bg > div.wrap > div.otherservice {
+    padding-bottom: 500px;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+}
+section#content8 > div.bg > div.wrap > div.otherservice p span:first-child {
+    color: #006cff;
+    font-size: 46px;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+section#content8 > div.bg > div.wrap > div.otherservice p span {
+    color: #006cff;
+}
+section#content8 > div.bg > div.wrap > div.otherservice p {
+    display: inline-block;
+    /* padding-top: 350px; */
+    font-size: 18px;
+    line-height: 40px;
+    /* font-weight: 7; */
+}
+section#content8 > div.bg > div.wrap img {
+    /* box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1); */
+    z-index: 100;
+}
+/* first */
+section#content8 > div.bg > div.wrap > div#first {
+    position: relative;
+    /* right: -230px; */
+    width: 1000px; margin: auto;
+}
+section#content8 > div.bg > div.wrap > div#first > img {
+    float: left;
+}
+section#content8 > div.bg > div.wrap > div#first > p > span {
+    color: #fff;
+}
+section#content8 > div.bg > div.wrap > div#first > p {
+    color: #fff;
+    position: relative;
+    top: 200px;
+    margin-left: 70px;
+}
+section#content8 > div.bg > div.wrap > div#first:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* second */
+section#content8 > div.bg > div.wrap > div#second {
+    text-align: center;
+    position: relative;
+}
+section#content8 > div.bg > div.wrap > div#second > img:nth-child(2) {
+    margin-left: 120px;
+    position: relative;
+    top: -180px;
+}
+section#content8 > div.bg > div.wrap > div#second > img {
+    /* box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1); */
+    /* float: both; */
+    margin-left: 33px;
+}
+section#content8 > div.bg > div.wrap > div#second > p {
+    text-align: left;
+    position: relative;
+    top: -220px;
+}
+section#content8 > div.bg > div.wrap > div#second > p {
+    margin-left: 65px;
+}
+/* section#content8 > div.bg > div.wrap > div#second:after {
+    content:"";
+    display: block;
+    clear: both;
+} */
+
+/* third */
+section#content8 > div.bg > div.wrap > div#third {
+    position: relative;
+    left: 500px;
+    height: 700px;
+    width: 800px;
+}
+section#content8 > div.bg > div.wrap > div#third > p {
+    text-align: right;
+    position: relative;
+    top: -300px;
+    margin-right: 150px;
+}
+section#content8 > div.bg > div.wrap > div#third > img {
+    /* box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1); */
+    /* margin-left: 30px; */
+}
+
+/* fourth */
+section#content8 > div.bg > div.wrap > div#fourth {
+    padding-bottom: 10px;
+    position: relative;
+    right: -350px;
+}
+section#content8 > div.bg > div.wrap > div#fourth > img {
+    /* box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1); */
+
+    float: left;
+}
+section#content8 > div.bg > div.wrap > div#fourth > p {
+    position: relative;
+    top: 200px;
+    margin-left: 80px;
+}
+section#content8 > div.bg > div.wrap > div#fourth:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/* section#content9 */
+section#content9 {
+    padding-top: 90px;
+    /* background-color: #f2f2f2; */
+    background-color: #fff;
+    padding-bottom: 400px;
+}
+section#content9 > div.inner {
+    /* height: 884px; */
+}
+section#content9 > div.inner > h2 {
+    color: #d4d5d8;
+    font-size: 40px;
+    font-weight: 600;
+    /* 타이틀 위로 붙이기 */
+    padding-top: 10%;
+    /* 타이틀 아래 떨어뜨리기 */
+    padding-bottom: 16%;
+}
+section#content9 > div.inner > div.design_concept {
+    display: flex;
+    justify-content: space-between;
+}
+section#content9 > div.inner div.text-area {
+    width: 400px;
+}
+section#content9 > div.inner div.text-area > h3 {
+    color: #006cff;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: -50px;
+}
+section#content9 > div.inner div.text-area > p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+section#content9 > div.inner > div.design_concept > div.round {
+    float: left;
+    margin: 0 20px 0 20px;
+    width: 220px; height: 130px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 90px;
+    color: #006cff;
+    background-color: #fff;
+    border-radius: 600px;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+}
+section#content9 > div.inner > div.design_concept > div#design_r1 {
+    position: relative;
+    right: 50px;
+    margin-bottom: 300px;
+}
+section#content9 > div.inner > div.design_concept > div#design_r2 {
+    position: relative;
+    right: 70px;
+}
+section#content9 > div.inner > div.design_concept > div#design_r3 {
+    position: relative;
+    right: 90px;
+}
+section#content9 > div.inner > div.design > div.text-area {
+    width: 1200px;
+    /* margin-bottom: -300px; */
+}
+section#content9 > div.inner > div.design_concept > div.text-area > div.line1 {
+    content:" ";
+    border-bottom: 1.8px solid #006cff;
+    width: 1200px;
+    animation-name: lineright;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+section#content9 > div.inner > div.design > div.text-area > p {
+    margin-top: 170px;
+    margin-bottom: 70px;
+}
+section#content9 > div.inner > div.design > img {
+    display: inline-block;
+    margin-bottom: 300px;
+}
+section#content9 > div.inner > div.font {
+    margin-bottom: 300px;
+}
+section#content9 > div.inner > div.font > img {
+    display: inline-block;
+    margin-top: 50px;
+}
+section#content9 > div.inner > div.font > div.text-area > div.line2 {
+    content:" ";
+    border-bottom: 1.8px solid #006cff;
+    width: 1200px;
+    animation-name: lineright;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+section#content9 > div.inner > div.logo_concept {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 160px;
+}
+section#content9 > div.inner > div.icon {
+    display: flex;
+    justify-content: space-between;
+}
+section#content9 > div.inner > div.icon > p {
+    display: flex;
+    justify-content: space-between;
+}
+.slideup {
+    opacity: 0;
+    position: relative;
+    top: 40px;
+}
+
+/* div.bground {
+    width:100%;
+    height: 100px;
+    position: relative;
+    top: 90px;
+    background-color: #fff;
+    border-radius:  0 0 100% 100%;
+} */
+div.bground2 {
+    width:100%;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    margin-top: -100px;
+    background-color: #fff;
+    border-radius:  0 0 100% 100%;
+}
+section#mockup {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/contents/mockupwallpaper.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* footer */
+footer {
+    background-color: #006cff;
+    overflow: hidden;
+}
+footer > img {
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-top: 610px;
+    margin-right: 20px;
+    opacity: 0.19;
+    z-index: 0;
+}
+footer > div.inner {
+    /* background-color: #006cff; */
+    color: #fff;
+    height: 450px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+footer > div.inner > ul:first-child {
+    text-align: left;
+    display: inline-block;
+    width: 1200px;
+    padding-top: 100px;
+}
+footer > div.inner > ul {
+    text-align: center;
+    float: left;
+    z-index: 10;
+}
+
+footer > div.inner > ul > li:first-child {
+    padding-top: 5px;
+}
+footer > div.inner > ul > li.name {
+    padding: 10px 0 50px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+footer > div.inner > ul > li{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+footer > div.inner > ul:nth-child(3) {
+    padding: 0 170px 0 170px;
+    padding-bottom: 200px;
+}
+
+/* Top button */
+button.topbutton {
+    position: fixed;
+    border-radius: 100px;
+    border: 3px solid #006cff;
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 50px;
+    width: 50px;
+    color: #006cff;
+    right:50px;
+    bottom:50px;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+button:focus {
+    outline: 0;
+}
